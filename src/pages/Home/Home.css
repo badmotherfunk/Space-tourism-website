@@ -1,0 +1,94 @@
+.landing {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.landingContainer {
+    position: relative;
+    top: 360px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.landingContent {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 145px;
+    width: 50%;
+}
+
+.landingTitle {
+    color: #D0D6F9;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+    width: 450px;
+}
+
+.landingTitleSpace {
+    font-family: 'bellefair';
+    font-size: 150px;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.landingText {
+    color: #D0D6F9;
+    font-family: 'barlow';
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 33px;
+    width: 450px;
+}
+
+.landingButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.landingButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    font-size: 35px;
+    font-family: 'bellefair';
+    color: #000;
+    margin-left: 150px;
+    z-index: 1;
+}
+
+.landingButtonLayout {
+    position: absolute;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-left: 150px;
+    opacity: 0.15;
+    transition: all 0.2s ease-in-out;
+}
+
+.landingButton:hover + .landingButtonLayout {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+}

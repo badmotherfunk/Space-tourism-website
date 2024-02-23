@@ -1,0 +1,85 @@
+.navbar {
+    position: fixed;
+    top: 37px;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo {
+    margin-left: 55px;
+    width: 50px;
+}
+
+.navbarLine {
+   width: 70%;
+   background: #FFFFFF;
+   height: 2px; 
+   margin-left: 60px;
+   opacity: 0.2;
+}
+.navbarContent {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+.navbarLayout {
+    position: absolute;
+    height: 100%;
+    width: 850px;
+    background: #ffffff;
+    opacity: 0.1;
+    filter: blur(1px);
+}
+
+.navbarLinks a{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.navbarLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap: 50px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.links:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.432);
+    line-height: 95px;
+}
+
+.linksActive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+    border-bottom: #FFFFFF 3px solid;
+    line-height: 95px;
+}
+
+.navbarNumbers {
+    font-weight: 500;
+}
+
+.navbarTitle {
+    font-weight: 300;
+}
