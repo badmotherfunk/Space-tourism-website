@@ -10,7 +10,6 @@
 
 .logo {
     margin-left: 55px;
-    width: 50px;
 }
 
 .navbarLine {
@@ -31,7 +30,7 @@
 .navbarLayout {
     position: absolute;
     height: 100%;
-    width: 850px;
+    width: 820px;
     background: #ffffff;
     opacity: 0.1;
     filter: blur(1px);
@@ -52,7 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 17px;
     gap: 50px;
 }
 
@@ -63,17 +62,17 @@
 
 .links:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 0.432);
-    line-height: 95px;
+    line-height: 97px;
 }
 
 .linksActive {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 17px;
     gap: 10px;
     border-bottom: #FFFFFF 3px solid;
-    line-height: 95px;
+    line-height: 97px;
 }
 
 .navbarNumbers {

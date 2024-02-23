@@ -1,7 +1,140 @@
 .destinationLanding {
+    position: fixed;
+    z-index: -1;
     width: 100vw;
     height: 100vh;
-    background-image: url(../../assets/destination/background-destination-desktop.jpg);
+    background-image: url(../../../public/assets/destination/background-destination-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.destinationContainer {
+    position: relative;
+    top: 210px;
+    width: 100%;
+    height: 100%;
+    padding: 0 100px 0 165px;
+}
+
+.destinationTitleContainer {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 20px;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+    width: 100%;
+}
+
+.destinationNumber {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.destinationTitle {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.destinationContent {
+    text-align: left;
+}
+
+.destinationsPlanet {
+    height: 35px;
+    cursor: pointer;
+}
+
+.destinationsPlanet:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.432);
+}
+
+.destinationsPlanetActive {
+    height: 35px;
+    cursor: pointer;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.destinations {
+    display: flex;
+    gap: 35px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.destinationImages {
+    width: 100px;
+    height: 100px;
+}
+
+.planetContainer {
+    display: flex;
+    margin-top: 80px;
+    text-align: left;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.planetContent {
+    display: flex;
+    flex-direction: column;
+    width: 470px
+}
+
+.planetName {
+    color: #FFFFFF;
+    font-size: 112px;
+    font-family: 'Bellefair';
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.planetDescription {
+    font-family: 'Barlow';
+    color: #D0D6F9;
+    text-align: left;
+    font-weight: 300;
+    line-height: 33px;
+    font-size: 19px;
+}
+
+.planetPicture {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.planetSeparation {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.205);
+    margin-top: 40px;
+}
+
+.travelContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.travelTitle {
+    color: #D0D6F9;
+    font-size: 17px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.travelText {
+    color: #FFFFFF;
+    font-family: 'Bellefair';
+    font-weight: 200;
+    font-size: 30px;
+    margin-top: 10px;
+    text-transform: uppercase;
 }

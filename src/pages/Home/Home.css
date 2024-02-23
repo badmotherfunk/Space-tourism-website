@@ -1,7 +1,7 @@
 .landing {
     width: 100vw;
     height: 100vh;
-    background-image: url(../../assets/home/background-home-desktop.jpg);
+    background-image: url(../../../public/assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: center; */
@@ -20,15 +20,15 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding-left: 145px;
+    padding-left: 165px;
     width: 50%;
 }
 
 .landingTitle {
     color: #D0D6F9;
     font-weight: 400;
-    font-size: 30px;
-    letter-spacing: 6px;
+    font-size: 28px;
+    letter-spacing: 5px;
     margin-bottom: 20px;
     width: 450px;
 }
@@ -70,7 +70,7 @@
     height: 250px;
     font-size: 35px;
     font-family: 'bellefair';
-    color: #000;
+    color: #0B0D17;
     margin-left: 150px;
     z-index: 1;
 }
