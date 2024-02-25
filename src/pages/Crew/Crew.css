@@ -102,19 +102,17 @@ input[type="radio"] {
 }
 
 .crewPicture img {
-    position: relative;
+    position: absolute;
     bottom: 0;
-    object-fit:contain;
-    height: 730px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1450px) {
     .crewPicture {
         display: flex;
     }
     .crewPicture img {
         width: 100%;
-        height: auto;
+        position: inherit;
     }
 }
 
