@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import './Destination.css'
 import dataJSON from '../../starter-code/data.json'
+import Navbar from '../../components/Navbar/Navbar';
 
 export default function Destination() {
 
@@ -26,6 +27,7 @@ export default function Destination() {
   return (
     <div className='destinationLanding'>
       <div className="destinationBackground"></div>
+      <Navbar/>
 
       <div className="globalContainer">
 

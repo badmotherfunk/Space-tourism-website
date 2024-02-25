@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import dataJSON from '../../starter-code/data.json'
 import './Crew.css'
+import Navbar from '../../components/Navbar/Navbar';
 
 export default function Crew() {
 
@@ -22,13 +23,14 @@ export default function Crew() {
   return (
     <div className='crewLanding'>
       <div className="crewBackground"></div>
-      <div className="globalContainer">
+      <Navbar/>
+      <div className="crewGlobalContainer">
 
+        <div className="crewContainer">
         <div className="titleContainer">
           <p className='number'>02</p>
           <h1 className='title'>MEET YOUR CREW</h1>
         </div>
-        <div className="crewContainer">
           <div className="crewContent">
 
             <div className="crewInformations">
@@ -44,11 +46,11 @@ export default function Crew() {
             </div>           
 
           </div>
-
-          <div className="crewPicture">
-            <img src={data.images.webp} alt={data.name} />
-          </div>
         </div>
+        <div className="crewPicture">
+            <img src={data.images.webp} alt={data.name} />
+      </div>
+        
       </div>
 
     </div>

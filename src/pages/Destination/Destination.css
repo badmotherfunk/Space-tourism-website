@@ -12,12 +12,15 @@
     background-image: url(../../../public/assets/destination/background-destination-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: -1;
     opacity: 0.8;
 }
 
 .globalContainer {
-    position: relative;
-    top: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
     padding: 0 100px 0 165px;

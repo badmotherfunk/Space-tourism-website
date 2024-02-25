@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import dataJSON from '../../starter-code/data.json'
 import './Technology.css'
+import Navbar from '../../components/Navbar/Navbar';
 
 export default function Technology() {
 
@@ -23,7 +24,7 @@ export default function Technology() {
 
   return (
     <div className='technologyLanding'>
-
+        <Navbar/>
          <div className="technologyGlobalContainer">
 
             <div className="titleContainer">

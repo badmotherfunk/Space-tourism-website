@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
+import Navbar from '../../components/Navbar/Navbar'
 
 export default function Home() {
   return (
     <div className='landing'>
+      <Navbar />
       <div className="landingContainer">
         <div className="landingContent">
           <h1 className='landingTitle'>SO, YOU WANT TO TRAVEL TO</h1>

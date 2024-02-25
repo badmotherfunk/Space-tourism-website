@@ -1,11 +1,12 @@
 .navbar {
-    position: fixed;
+    position: relative;
     top: 37px;
     width: 100vw;
     height: 100px;
     display: flex;
     align-items: center;
     flex-direction: row;
+    margin-bottom: 100px;
 }
 
 .logo {

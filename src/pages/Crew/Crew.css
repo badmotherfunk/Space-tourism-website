@@ -16,21 +16,24 @@
     opacity: 0.5;
 }
 
-
-.radioContainer {
+.crewGlobalContainer {
     display: flex;
-    gap: 20px;
+    flex-direction: row;
+    padding: 0 100px 0 165px;
+    width: 100%;
+    height: 100%;
 }
 
 .crewContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 50%;
 }
 
 .crewContent {
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 100%;
     margin-top: 120px;
 }
 
@@ -64,10 +67,14 @@
     margin-top: 30px;
 }
 
+.radioContainer {
+    display: flex;
+    gap: 20px;
+    padding-top: 100px;
+}
 
 input[type="radio"] {
     appearance: none;
-    margin-top: 100px;
 }
 
 .radioButton {
@@ -91,7 +98,23 @@ input[type="radio"] {
 }
 
 .crewPicture {
-    display: flex;
-    justify-content: flex-start;
-    width: 45%;
+    height: auto;
 }
+
+.crewPicture img {
+    position: relative;
+    bottom: 0;
+    object-fit:contain;
+    height: 730px;
+}
+
+@media screen and (min-width: 1440px) {
+    .crewPicture {
+        display: flex;
+    }
+    .crewPicture img {
+        width: 100%;
+        height: auto;
+    }
+}
+
