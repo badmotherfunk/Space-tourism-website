@@ -5,36 +5,33 @@ import dataJSON from '../../starter-code/data.json'
 
 export default function Destination() {
 
-  
   const projectsData = dataJSON.destinations;
-  console.log(projectsData)
 
   const [data, setData] = useState(projectsData[0])
-  const [active, setActive] = useState(projectsData[0].name)
+  const [active, setActive] = useState(0)
   const [picture, setPicture] = useState(projectsData[0].images.webp)
 
   const handleDestination = (e) => {
     if(e.target.id !== null) {
-      console.log(e.target.id)
-      
+
       const destinationData = projectsData[e.target.id]
+      const id = parseInt(e.target.id)
       
       setData(destinationData)
-      setActive(destinationData.name)
+      setActive(id)
       setPicture(destinationData.images.webp)
     }
   }
-  console.log(active)
-
 
   return (
     <div className='destinationLanding'>
+      <div className="destinationBackground"></div>
 
-      <div className="destinationContainer">
+      <div className="globalContainer">
 
-        <div className="destinationTitleContainer">
-          <p className='destinationNumber'>01</p>
-          <h1 className='destinationTitle'>PICK YOUR DESTINATION</h1>
+        <div className="titleContainer">
+          <p className='number'>01</p>
+          <h1 className='title'>PICK YOUR DESTINATION</h1>
         </div>
         <div className='planetContainer'>
             <div className="planetPicture">
@@ -43,7 +40,7 @@ export default function Destination() {
             <div className="planetContent">
                 <div className="destinations">
                   {projectsData.map((destination, index) => (
-                    <div key={index} className={active === destination.name ? "destinationsPlanetActive" : "destinationsPlanet"}>
+                    <div key={index} className={active === index ? "destinationsPlanetActive" : "destinationsPlanet"}>
                       <p onClick={handleDestination} id={index}>{destination.name}</p>
                     </div>
                   ))}           

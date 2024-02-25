@@ -14,8 +14,8 @@ export default function Navbar() {
         <div className='navbarLine'></div>
 
         <div className="navbarContent">
-            <div className="navbarLinks">
             <div className="navbarLayout"></div>
+            <div className="navbarLinks">
                 <Link to={"/"}>
                 <div className={ pathname === "/" ? "linksActive" : "links"}>
                     <p className='navbarNumbers'>
