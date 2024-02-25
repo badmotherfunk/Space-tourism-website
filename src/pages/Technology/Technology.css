@@ -7,3 +7,90 @@
     background-repeat: no-repeat;
     z-index: -1;
 }
+
+.technologyGlobalContainer {
+    position: relative;
+    top: 210px;
+    width: 100%;
+    height: auto;
+    padding: 0 0 0 165px;
+}
+
+.technologyContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.technologyButtonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 100px;
+}
+
+.technologyRadioButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #ffffff4d;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Bellefair';
+    cursor: pointer;
+}
+
+.technologyRadioButton:hover {
+    border: 1px solid #FFFFFF;
+}
+
+.technologyRadioButtonActive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #ffffff4d;
+    color: #0B0D17;
+    font-size: 40px;
+    font-family: 'Bellefair';
+}
+
+.technologyInformationContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    padding-top: 100px;
+}
+
+.technologyInformationSubtitle {
+    color: #D0D6F9;
+    font-size: 19px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.technologyInformationTitle {
+    color: #FFFFFF;
+    font-family: 'Bellefair';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.technologyInformationDescription {
+    color: #D0D6F9;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px;
+    width: 90%;
+}

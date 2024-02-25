@@ -6,7 +6,6 @@ import './Crew.css'
 export default function Crew() {
 
   const projectsData = dataJSON.crew;
-  console.log(projectsData)
 
   const [active, setActive] = useState(0)
   const [data, setData] = useState(projectsData[0])

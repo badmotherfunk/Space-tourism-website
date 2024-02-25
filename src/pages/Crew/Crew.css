@@ -79,6 +79,10 @@ input[type="radio"] {
     cursor: pointer;
 }
 
+.radioButton:hover {
+    opacity: 0.5;
+}
+
 .radioButtonActive {
     width: 18px;
     height: 18px;
