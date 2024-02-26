@@ -29,8 +29,8 @@
 .technologyButtonContainer {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding-top: 100px;
+    gap: 35px;
+    padding-top: 120px;
 }
 
 .technologyRadioButton {
@@ -71,7 +71,7 @@
     flex-direction: column;
     text-align: left;
     width: 50%;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .technologyInformationSubtitle {
@@ -88,7 +88,7 @@
     text-transform: uppercase;
     font-weight: 400;
     font-size: 55px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .technologyInformationDescription {

@@ -14,7 +14,7 @@ export default function Destination() {
 
   const handleDestination = (e) => {
     if(e.target.id !== null) {
-
+      
       const destinationData = projectsData[e.target.id]
       const id = parseInt(e.target.id)
       

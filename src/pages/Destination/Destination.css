@@ -37,13 +37,13 @@
 }
 
 .number {
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 700;
     color: #ffffff46;
 }
 
 .title {
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 400;
 }
 
@@ -72,7 +72,7 @@
     font-size: 16px;
     color: #FFFFFF;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2.7px;
     margin-bottom: 30px;
 }
 
@@ -96,7 +96,7 @@
 
 .planetName {
     color: #FFFFFF;
-    font-size: 112px;
+    font-size: 100px;
     font-family: 'Bellefair';
     font-weight: 400;
     text-transform: uppercase;
@@ -113,7 +113,7 @@
 
 .planetPicture {
     width: 50%;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -135,16 +135,16 @@
 
 .travelTitle {
     color: #D0D6F9;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 200;
-    letter-spacing: 2px;
+    letter-spacing: 2.35px;
 }
 
 .travelText {
     color: #FFFFFF;
     font-family: 'Bellefair';
     font-weight: 200;
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 10px;
     text-transform: uppercase;
 }

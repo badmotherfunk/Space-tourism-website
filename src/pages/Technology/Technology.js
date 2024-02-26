@@ -7,15 +7,13 @@ import Navbar from '../../components/Navbar/Navbar';
 export default function Technology() {
 
   const projectsData = dataJSON.technology;
-  console.log(projectsData)
 
   const [active, setActive] = useState(0)
   const [data, setData] = useState(projectsData[0])
 
   const handleTechnology = (e) => {
-    console.log(e)
+    
     const id = parseInt(e.target.id)
-
     const technologyData = projectsData[e.target.id]
 
     setActive(id)

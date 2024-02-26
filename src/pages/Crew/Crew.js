@@ -12,13 +12,13 @@ export default function Crew() {
   const [data, setData] = useState(projectsData[0])
 
   const handleRadio = (e) => {
+    
     const id = parseInt(e.target.id)
     const crewData = projectsData[e.target.id]
 
     setActive(id)
     setData(crewData)
   }
-  console.log(active)
 
   return (
     <div className='crewLanding'>
