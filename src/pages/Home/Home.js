@@ -17,7 +17,7 @@ export default function Home() {
           <Link to={'/destination'} className='landingButton'>
             <p>EXPLORE</p>
           </Link>
-        <div className="landingButtonLayout"></div>
+          <div className="landingButtonLayout"></div>
         </div>
       </div>   
     </div>

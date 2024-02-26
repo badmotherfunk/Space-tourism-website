@@ -1,6 +1,6 @@
 .landing {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../../../public/assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,13 +93,15 @@
     opacity: 0.15;
 }
 
+
+/* ---------- MEDIA QUERIES ---------- */
+
+
 @media screen and (max-width: 1024px) {
     .landingTitle {
-        display: flex;
-        justify-content: center;
         font-size: 18px;
         margin-bottom: 10px;
-        width: 100%;
+        width: 400px;
     }
     .landingTitleSpace {
         font-size: 110px;
@@ -130,6 +132,8 @@
 @media screen and (max-width: 768px) {
     .landing {
         background-image: url(../../../public/assets/home/background-home-tablet.jpg);
+        background-size: cover;
+        width: 100%;
     }
     .landingContainer {
         flex-direction: column;
@@ -143,9 +147,15 @@
     }
     .landingButton {
         margin: 0;
+        margin-bottom: 50px;
     }
     .landingButtonLayout {
         margin: 0;
+    }
+    .landingTitle {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
     .landingTitleSpace {
         font-size: 145px;
@@ -161,15 +171,16 @@
 
 @media screen and (max-width: 480px) {
     .landingTitle {
-        font-size: 15px;
+        font-size: 16px;
+        margin-bottom: 20px;
     }
     .landingTitleSpace {
         font-size: 100px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .landingText {
-        font-size: 15px;
-        width: 70%;
+        font-size: 16px;
+        width: 80%;
         text-align: center;
         margin-bottom: 100px;
     }
