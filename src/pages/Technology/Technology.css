@@ -1,15 +1,14 @@
 .technologyLanding {
-    position: fixed;
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(../../../public/assets/technology/background-technology-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 0;
 }
 
-.technologyGlobalContainer {
-    
+.technologyGlobalContainer {   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,13 +16,21 @@
     width: 100%;
     height: auto;
     padding: 0 0 0 165px;
+    margin-top: 110px;
+}
+
+.technologyWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .technologyContainer {
     display: flex;
     flex-direction: row;
     gap: 80px;
-    height: 600px;
+    height: auto;
+    width: 100%;
 }
 
 .technologyButtonContainer {
@@ -70,8 +77,9 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 50%;
+    width: 100%;
     padding-top: 120px;
+    padding-right: 50px;
 }
 
 .technologyInformationSubtitle {
@@ -93,7 +101,7 @@
 
 .technologyInformationDescription {
     color: #D0D6F9;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 300;
     line-height: 35px;
     width: 90%;
@@ -102,8 +110,9 @@
 .technologyPicture {
     display: flex;
     justify-content: flex-end;
-    width: 50%;
+    width: 70%;
     height: auto;
+    margin-top: 50px;
 }
 
 .technologyPicture img {
@@ -115,3 +124,123 @@
 
 /* ---------- MEDIA QUERIES ---------- */
 
+@media screen and (max-width: 1024px) {
+    .technologyContainer {
+        gap: 40px;
+    }
+    .technologyButtonContainer {
+        padding-top: 100px;
+    }
+    .technologyRadioButton {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+    .technologyRadioButtonActive {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .technologyInformationContainer {
+        padding-top: 100px;
+    }
+    .technologyInformationTitle {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .technologyInformationDescription {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .technologyGlobalContainer {
+        padding: 0;
+        margin-top: 40px;
+    }
+    .technologyGlobalContainer .titleContainer {
+        padding-left: 45px;
+    }
+    .technologyContainer {
+        gap: 0;
+    }
+    .technologyWrapper {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .technologyContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .technologyButtonContainer {
+        flex-direction: row;
+        padding-top: 50px;
+        gap: 20px;
+    }
+    .technologyInformationContainer {
+        align-items: center;
+        width: 100%;
+        padding: 50px;
+    }
+    .technologyPicture {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .technologyPicture img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .technologyInformationTitle {
+        margin-bottom: 20px;
+    }
+    .technologyInformationDescription {
+        text-align: center;
+        width: 420px;
+        line-height: 30px;
+        font-weight: 200;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .technologyGlobalContainer {
+        margin: 0;
+    }
+    .technologyGlobalContainer .titleContainer {
+        padding-left: 0;
+    }
+    .technologyPicture {
+        margin-top: 30px;
+    }
+    .technologyPicture img{
+        height: 200px;
+    }
+    .technologyRadioButton {
+        width: 50px;
+        height: 50px;
+        font-size: 21px;
+    }
+    .technologyRadioButtonActive {
+        width: 50px;
+        height: 50px;
+        font-size: 21px;
+    }
+    .technologyInformationContainer {
+        align-items: center;
+        width: 100%;
+        padding: 30px;
+    }
+    .technologyInformationSubtitle {
+        margin-bottom: 10px;
+    }
+    .technologyInformationTitle {
+        font-size: 30px;
+    }
+    .technologyInformationDescription {
+        width: 100%;
+        line-height: 30px;
+    }
+}

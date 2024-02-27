@@ -29,25 +29,27 @@ export default function Technology() {
               <p className='number'>03</p>
               <h1 className='title'>SPACE LAUNCH 101</h1>
             </div>
+            <div className="technologyWrapper">
 
-            <div className="technologyContainer">
-              <div className="technologyButtonContainer">
-                {projectsData.map((technology,index) => (
-                  <div className={active === index ? 'technologyRadioButtonActive' : 'technologyRadioButton'} id={index} onClick={handleTechnology}>{index + 1}</div>
-                ))}
-              </div>
-              <div className="technologyInformationContainer">
-                <p className='technologyInformationSubtitle'>THE TERMINOLOGY...</p>
-                <h2 className='technologyInformationTitle'>{data.name}</h2>
-                <h3 className='technologyInformationDescription'>{data.description}</h3>
+              <div className="technologyContainer">
+                <div className="technologyButtonContainer">
+                  {projectsData.map((technology,index) => (
+                    <div className={active === index ? 'technologyRadioButtonActive' : 'technologyRadioButton'} id={index} onClick={handleTechnology}>{index + 1}</div>
+                    ))}
+                </div>
+                <div className="technologyInformationContainer">
+                  <p className='technologyInformationSubtitle'>THE TERMINOLOGY...</p>
+                  <h2 className='technologyInformationTitle'>{data.name}</h2>
+                  <h3 className='technologyInformationDescription'>{data.description}</h3>
+                </div>
               </div>
               <div className="technologyPicture">
-              <img src={data.images.portrait} alt={data.name} />
-            </div>
+                <img src={data.images.portrait} alt={data.name} />
+              </div>
             </div>
 
-      </div>
+        </div>
 
-</div>
+    </div>
   )
 }
