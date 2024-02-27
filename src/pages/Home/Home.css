@@ -12,6 +12,7 @@
     height: auto;
     display: flex;
     align-items: center;
+    margin-top: 110px;
 }
 
 .landingContent {
@@ -170,6 +171,12 @@
 }
 
 @media screen and (max-width: 480px) {
+    .landing {
+        background-image: url(../../../public/assets/home/background-home-mobile.jpg);
+    }
+    .landingContainer {
+        margin-top: 30px;
+    }
     .landingTitle {
         font-size: 16px;
         margin-bottom: 20px;

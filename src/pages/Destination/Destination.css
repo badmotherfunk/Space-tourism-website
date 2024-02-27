@@ -24,6 +24,7 @@
     width: 100%;
     height: auto;
     padding: 0 100px 0 165px;
+    margin-top: 110px;
 }
 
 .titleContainer {
@@ -54,6 +55,7 @@
 .destinationsPlanet {
     height: 35px;
     cursor: pointer;
+    color: #D0D6F9;
 }
 
 .destinationsPlanet:hover {
@@ -118,6 +120,10 @@
     margin-right: 50px;
 }
 
+.planetPicture img {
+    max-width: 100%;
+}
+
 .planetSeparation {
     width: 100%;
     height: 1px;
@@ -129,7 +135,7 @@
     display: flex;
     flex-direction: row;
     gap: 80px;
-    width: 100%;
+    width: fit-content;
     margin-top: 25px;
 }
 
@@ -147,4 +153,195 @@
     font-size: 28px;
     margin-top: 10px;
     text-transform: uppercase;
+}
+
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media screen and (max-width: 1024px) {
+    .globalContainer {
+        padding: 0 50px 0 165px;
+    }
+    .titleContainer {
+        gap: 15px;
+        letter-spacing: 4px;
+    }
+    .title {
+        font-size: 23px;
+    }
+    .number {
+        font-size: 23px;
+    }
+
+    .destinations {
+        display: flex;
+        gap: 30px;
+        font-size: 14px;
+        letter-spacing: 2.7px;
+        margin-bottom: 20px;
+    }
+    .destinationsPlanet {
+        height: 30px
+    }
+    .destinationsPlanetActive {
+        height: 30px
+    }
+    .planetName {
+        font-size: 85px;
+    }
+    .planetDescription {
+        line-height: 28px;
+        font-size: 17px;
+    }
+    .planetSeparation {
+        margin-top: 30px;
+    }
+    .travelContainer {
+        gap: 50px;
+        margin-top: 15px;
+    }
+    .travelTitle {
+        font-size: 14px;
+        letter-spacing: 2.35px;
+    }
+    .travelText {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .destinationBackground {
+        background-image: url(../../../public/assets/destination/background-destination-tablet.jpg);
+    }
+    .globalContainer {
+        padding: 0 40px 0 40px;
+        margin-top: 40px;
+    }
+    .planetContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .number {
+        font-size: 20px;
+    }
+    .planetPicture {
+        width: 45%;
+    }
+    .planetContent {
+        align-items: center;
+        margin-top: 50px;
+        width: 100%;
+        padding: 0 40px;
+    }
+    .destinations {
+        margin-bottom: 30px;
+    }
+    .planetName {
+        font-size: 75px;
+    }
+    .planetDescription {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .travelContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .distanceContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .travelContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .travelTitle {
+        font-size: 14px;
+        letter-spacing: 2.35px;
+    }
+    .travelText {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .destinationBackground {
+        background-image: url(../../../public/assets/destination/background-destination-mobile.jpg);
+    }
+    .globalContainer {
+        padding: 0;
+        margin-top: 0;
+    }
+    .titleContainer {
+        justify-content: center;
+    }
+    .planetContainer {
+        margin-top: 10px;
+    }
+    .title {
+        font-size: 16px;
+        font-weight: 200;
+    }
+    .number {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .planetPicture {
+        width: 50%;
+    }
+    .planetContent {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    .destinationsPlanet {
+        height: 27px
+    }
+    .destinationsPlanetActive {
+        height: 27px
+    }
+    .destinations {
+        margin-bottom: 20px;
+    }
+    .planetName {
+        font-size: 63px;
+    }
+    .planetDescription {
+        font-size: 15px;
+        margin-top: 0;
+        line-height: 27px;
+    }
+    .travelContainer {
+        flex-direction: column;
+        margin-top: 30px;
+        width: 100%;
+        gap: 30px;
+    }
+    .planetSeparation {
+        margin-top: 20px;
+    }
+    .distanceContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .travelContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .travelText {
+        font-size: 28px;
+    }
 }

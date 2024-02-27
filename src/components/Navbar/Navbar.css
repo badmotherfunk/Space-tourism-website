@@ -6,7 +6,6 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-bottom: 110px;
 }
 
 .logo {
@@ -130,7 +129,7 @@
     .navbarLinks {
         gap: 25px;
         padding: 0;
-        width: 390px
+        width: 400px
     }
     .linksActive {
         letter-spacing: 3px;
@@ -146,9 +145,6 @@
     }
 }
 @media screen and (max-width: 480px) {
-    .navbar {
-        margin-bottom: 30px;
-    }
     .navbarContent {
         position: absolute;
         height: 100vh;
@@ -157,21 +153,21 @@
         right: 0;
         z-index: 99;
         right: -330px;
-        /* display: none; */
         transition: all 0.3s ease-out;
     }
     .logo {
-        margin-left: 35px;
+        margin-left: 25px;
+        
+        transform: scale(0.9);
     }
     .burgerIcon {
         display: block;
         position: absolute;
-        right: 30px;
+        right: 25px;
         cursor: pointer;
     }
 
     .burgerIcon.active + .navbarContent {
-        display: flex;
         right: 0;
     }
     .navbarLinks a {
