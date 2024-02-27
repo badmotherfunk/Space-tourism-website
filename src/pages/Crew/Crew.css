@@ -69,7 +69,7 @@
     font-size: 23px;
     font-weight: 300;
     line-height: 40px;
-    width: 450px;
+    width: 90%;
     margin-top: 30px;
 }
 
@@ -90,6 +90,7 @@ input[type="radio"] {
     background-color: #FFFFFFFF;
     opacity: 0.3;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 .radioButton:hover {
@@ -107,32 +108,38 @@ input[type="radio"] {
     display: flex;
     width: 100%;
     height: auto;
+    justify-content: center;
 }
 
 .crewPicture img {
-    position: absolute;
+    position: relative;
     bottom: 0;
     margin-left: 30px;
-    width: 35%;
+    /* width: 100%; */
 }
 
 
 /* ---------- MEDIA QUERIES ---------- */
 
 @media screen and (min-width: 1400px) {
-    .crewPicture {
-        display: flex;
-    }
     .crewPicture img {
         width: 70%;
-        position: inherit;
-        object-fit: contain;
     }
 }
 
 @media screen and (max-width: 1024px) {
+    .crewGlobalContent {
+        flex-direction: column;
+        align-items: center;
+    }
     .crewContent {
+        align-items: center;
+        margin-top: 50px;
         margin-top: 80px;
+        padding: 0 80px;
+    }
+    .crewInformations {
+        text-align: center;
     }
     .crewRole {
         font-size: 28px;
@@ -162,24 +169,15 @@ input[type="radio"] {
         width: 15px;
         height: 15px;
     }
+    .crewPicture img {
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .crewGlobalContainer {
         padding: 0 45px;
         margin-top: 40px;
-    }
-    .crewGlobalContent {
-        flex-direction: column;
-        align-items: center;
-    }
-    .crewContent {
-        align-items: center;
-        margin-top: 50px;
-        padding: 0 80px;
-    }
-    .crewInformations {
-        text-align: center;
     }
     .crewRole {
         font-size: 25px;
@@ -213,6 +211,9 @@ input[type="radio"] {
         width: 11px;
         height: 11px;
     }
+    .crewPicture img {
+        width: 75%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -236,10 +237,11 @@ input[type="radio"] {
     .crewPicture {
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     .crewPicture img {
         position: inherit;
+        width: 180px;
     }
     .pictureLine {
         width: 100%;
@@ -247,11 +249,11 @@ input[type="radio"] {
         background-color: rgba(255, 255, 255, 0.103);
     } 
     .radioContainer {
-        padding-top: 30px;
+        padding-top: 35px;
     }
     .crewRole {
         font-size: 20px;
-        margin-top: 30px;
+        margin-top: 35px;
     }
     .crewMember {
         font-size: 26px;
@@ -259,6 +261,8 @@ input[type="radio"] {
     .crewDescription {
         font-size: 18px;
         line-height: 27px;
+        margin-top: 20px;
+        padding-bottom: 30px;
     }
 }
 
