@@ -1,8 +1,8 @@
 .crewLanding {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
-    z-index: 0;
 }
 
 .crewBackground {
@@ -18,30 +18,29 @@
 
 .crewGlobalContainer {
     display: flex;
-    flex-direction: row;
-    padding: 0 100px 0 165px;
-    width: 100%;
-    margin-top: 110px;
-}
-
-.crewContainer {
-    display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
+    padding-left: 165px;
 }
 
 .crewGlobalContent {
     display: flex;
-    width: 100%;
     height: 100%;
 }
-
 .crewContent {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 120px;
+    width: 50%;
+    justify-content: center;
 }
+
+.crewPicture {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
 
 .crewInformations {
     text-align: left;
@@ -104,48 +103,34 @@ input[type="radio"] {
     background-color: #FFFFFFFF;
 }
 
-.crewPicture {
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-}
-
-.crewPicture img {
-    position: relative;
-    bottom: 0;
-    margin-left: 30px;
-    /* width: 100%; */
-}
-
 
 /* ---------- MEDIA QUERIES ---------- */
 
-@media screen and (min-width: 1400px) {
-    .crewPicture img {
-        width: 70%;
-    }
-}
-
 @media screen and (max-width: 1024px) {
+    .crewGlobalContainer {
+        padding: 0;
+    }
+    .crewGlobalContainer .titleContainer {
+        padding-left: 165px;
+    }
     .crewGlobalContent {
         flex-direction: column;
         align-items: center;
     }
     .crewContent {
         align-items: center;
+        width: 70%;
         margin-top: 50px;
         margin-top: 80px;
-        padding: 0 80px;
     }
     .crewInformations {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .crewRole {
         font-size: 28px;
-    }
-    .crewPicture img {
-        margin-left: 20px;
     }
     .crewMember {
         font-size: 39px;
@@ -169,15 +154,14 @@ input[type="radio"] {
         width: 15px;
         height: 15px;
     }
-    .crewPicture img {
-        width: 95%;
-    }
 }
 
 @media screen and (max-width: 768px) {
+    .crewGlobalContainer .titleContainer {
+        padding-left: 0;
+    }
     .crewGlobalContainer {
         padding: 0 45px;
-        margin-top: 40px;
     }
     .crewRole {
         font-size: 25px;
@@ -185,10 +169,7 @@ input[type="radio"] {
     .crewPicture {
         display: flex;
         justify-content: center;
-    }
-    .crewPicture img {
-        margin-left: 0;
-        width: 50%;
+        align-items: end;
     }
     .crewMember {
         font-size: 39px;
@@ -212,7 +193,7 @@ input[type="radio"] {
         height: 11px;
     }
     .crewPicture img {
-        width: 75%;
+        width: 70%;
     }
 }
 
@@ -222,12 +203,14 @@ input[type="radio"] {
         align-items: center;
         padding: 0 20px;
         margin-top: 0;
+        height: auto;
     }
     .crewContent {
         flex-direction: column-reverse;
         justify-content: flex-end;
         margin-top: 0;
         padding: 0 15px;
+        width: 100%;
     }
     .crewGlobalContent {
         display: flex;
@@ -238,10 +221,10 @@ input[type="radio"] {
         flex-direction: column;
         align-items: center;
         margin-top: 30px;
+        width: 100%;
     }
     .crewPicture img {
-        position: inherit;
-        width: 180px;
+        width: 50%;
     }
     .pictureLine {
         width: 100%;
@@ -253,7 +236,7 @@ input[type="radio"] {
     }
     .crewRole {
         font-size: 20px;
-        margin-top: 35px;
+        margin-top: 10px;
     }
     .crewMember {
         font-size: 26px;

@@ -1,6 +1,6 @@
 .destinationLanding {
-    position: relative;
-    z-index: 0;
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
 }
@@ -24,7 +24,6 @@
     width: 100%;
     height: auto;
     padding: 0 100px 0 165px;
-    margin-top: 110px;
 }
 
 .titleContainer {
@@ -35,6 +34,7 @@
     color: #FFFFFF;
     letter-spacing: 5px;
     width: 100%;
+    margin-top: 50px;
 }
 
 .number {
@@ -216,7 +216,6 @@
     }
     .globalContainer {
         padding: 0 40px 0 40px;
-        margin-top: 40px;
     }
     .planetContainer {
         flex-direction: column;
@@ -286,6 +285,7 @@
     }
     .titleContainer {
         justify-content: center;
+        margin-top: 20px;
     }
     .planetContainer {
         margin-top: 10px;

@@ -6,6 +6,7 @@ import Navbar from '../../components/Navbar/Navbar'
 export default function Home() {
   return (
     <div className='landing'>
+      <div className="landingBackground"></div>
       <Navbar />
       <div className="landingContainer">
         <div className="landingContent">

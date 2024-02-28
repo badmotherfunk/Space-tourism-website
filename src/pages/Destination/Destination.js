@@ -47,7 +47,7 @@ export default function Destination() {
                     </div>
                   ))}           
                 </div>
-                <h2 className='planetName'>{data.name}</h2>
+                <h2 className="planetName">{data.name}</h2>
                 <h3 className='planetDescription'>{data.description}</h3>
 
                 <div className="planetSeparation"></div>

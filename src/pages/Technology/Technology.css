@@ -1,11 +1,18 @@
 .technologyLanding {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.technologyBackground {
+    position: absolute;
     width: 100vw;
     height: 100vh;
     background-image: url(../../../public/assets/technology/background-technology-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 0;
+    z-index: -1;
 }
 
 .technologyGlobalContainer {   
@@ -14,15 +21,16 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 0 0 0 165px;
-    margin-top: 110px;
 }
 
 .technologyWrapper {
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 100%;
+    align-items: center;
 }
 
 .technologyContainer {
@@ -37,7 +45,6 @@
     display: flex;
     flex-direction: column;
     gap: 35px;
-    padding-top: 120px;
 }
 
 .technologyRadioButton {
@@ -78,8 +85,7 @@
     flex-direction: column;
     text-align: left;
     width: 100%;
-    padding-top: 120px;
-    padding-right: 50px;
+    padding-right: 20px;
 }
 
 .technologyInformationSubtitle {
@@ -125,11 +131,27 @@
 /* ---------- MEDIA QUERIES ---------- */
 
 @media screen and (max-width: 1024px) {
+    .technologyGlobalContainer {
+        padding: 0;
+    }
+    .technologyGlobalContainer .titleContainer {
+        padding-left: 60px;
+    }
+    .technologyWrapper {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+        margin-top: 60px;
+    }
     .technologyContainer {
-        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
     }
     .technologyButtonContainer {
-        padding-top: 100px;
+        flex-direction: row;
+        padding-top: 50px;
+        gap: 20px;
     }
     .technologyRadioButton {
         width: 60px;
@@ -141,9 +163,10 @@
         height: 60px;
         font-size: 30px;
     }
-
     .technologyInformationContainer {
-        padding-top: 100px;
+        align-items: center;
+        width: 100%;
+        padding: 50px;
     }
     .technologyInformationTitle {
         font-size: 40px;
@@ -153,40 +176,16 @@
         font-size: 20px;
         line-height: 25px;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .technologyGlobalContainer {
-        padding: 0;
-        margin-top: 40px;
-    }
-    .technologyGlobalContainer .titleContainer {
-        padding-left: 45px;
-    }
-    .technologyContainer {
-        gap: 0;
-    }
-    .technologyWrapper {
-        flex-direction: column-reverse;
-        width: 100%;
-    }
-    .technologyContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-    .technologyButtonContainer {
-        flex-direction: row;
-        padding-top: 50px;
-        gap: 20px;
-    }
-    .technologyInformationContainer {
-        align-items: center;
-        width: 100%;
-        padding: 50px;
+    .technologyInformationDescription {
+        text-align: center;
+        margin-top: 20px;
+        width: 80%;
+        line-height: 30px;
+        font-weight: 200;
     }
     .technologyPicture {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 0;
     }
     .technologyPicture img{
         width: 100%;
@@ -194,26 +193,37 @@
         object-fit: cover;
         object-position: center;
     }
-    .technologyInformationTitle {
-        margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .technologyBackground {
+        background: url(../../../public/assets/technology/background-technology-tablet.jpg);
+    }
+    .technologyGlobalContainer .titleContainer {
+        padding-left: 45px;
+    }
+    .technologyContainer {
+        flex-direction: column;
+        align-items: center;
     }
     .technologyInformationDescription {
-        text-align: center;
         width: 420px;
-        line-height: 30px;
-        font-weight: 200;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .technologyBackground {
+        background: url(../../../public/assets/technology/background-technology-mobile.jpg);
+    }
     .technologyGlobalContainer {
         margin: 0;
     }
+    .technologyWrapper {
+        justify-content: flex-end;
+        margin-top: 40px;
+    }
     .technologyGlobalContainer .titleContainer {
         padding-left: 0;
-    }
-    .technologyPicture {
-        margin-top: 30px;
     }
     .technologyPicture img{
         height: 200px;

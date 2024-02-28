@@ -22,6 +22,7 @@ export default function Technology() {
 
   return (
     <div className='technologyLanding'>
+      <div className="technologyBackground"></div>
         <Navbar/>
          <div className="technologyGlobalContainer">
 
