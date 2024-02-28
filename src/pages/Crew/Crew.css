@@ -1,6 +1,7 @@
 .crewLanding {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100vw;
     height: 100vh;
 }
@@ -21,6 +22,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
+    max-width: 1440px;
     padding-left: 165px;
 }
 
@@ -33,6 +35,7 @@
     flex-direction: column;
     width: 50%;
     justify-content: center;
+
 }
 
 .crewPicture {
@@ -40,7 +43,6 @@
     justify-content: center;
     height: 100%;
 }
-
 
 .crewInformations {
     text-align: left;
@@ -105,6 +107,12 @@ input[type="radio"] {
 
 
 /* ---------- MEDIA QUERIES ---------- */
+
+@media screen and (min-width: 1440px) {
+    .crewPicture img {
+        object-fit: contain;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .crewGlobalContainer {

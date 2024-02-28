@@ -1,6 +1,7 @@
 .landing {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100vw;
     height: 100vh;
 }
@@ -18,6 +19,7 @@
 .landingContainer {
     width: 100%;
     height: 100vh;
+    max-width: 1440px;
     display: flex;
     align-items: center;
 }
@@ -103,12 +105,6 @@
 
 
 /* ---------- MEDIA QUERIES ---------- */
-@media screen and (min-width: 1440px) {
-    .landingText {
-        width: 80%;
-    }
-}
-
 
 @media screen and (max-width: 1024px) {
     .landingTitle {

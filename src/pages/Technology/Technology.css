@@ -1,6 +1,7 @@
 .technologyLanding {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100vw;
     height: 100vh;
 }
@@ -21,7 +22,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    max-width: 1440px;
     padding: 0 0 0 165px;
 }
 

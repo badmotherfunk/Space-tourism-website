@@ -1,6 +1,7 @@
 .destinationLanding {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100vw;
     height: 100vh;
 }
@@ -24,6 +25,7 @@
     width: 100%;
     height: auto;
     padding: 0 100px 0 165px;
+    max-width: 1440px;
 }
 
 .titleContainer {
