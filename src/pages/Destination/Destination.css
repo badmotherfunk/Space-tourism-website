@@ -70,6 +70,7 @@
     border-bottom: 3px solid #FFFFFF;
 }
 
+
 .destinations {
     display: flex;
     gap: 35px;
@@ -100,19 +101,6 @@
     width: 470px;
 }
 
-.planetContent.active {
-    animation: fade 0.5s ease-in-out;
-}
-
-@keyframes fade {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
 .planetName {
     color: #FFFFFF;
     font-size: 100px;
@@ -139,6 +127,16 @@
 
 .planetPicture img {
     max-width: 100%;
+    animation: rotate 120s linear infinite
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .planetSeparation {

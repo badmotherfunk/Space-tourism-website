@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useState } from 'react';
 import './Destination.css'
-import { useRef } from 'react';
 import dataJSON from '../../starter-code/data.json'
 import Navbar from '../../components/Navbar/Navbar';
 
@@ -21,15 +20,6 @@ export default function Destination() {
       setActive(id)
       setPicture(destinationData.images.webp)
     }
-    const prevActive = useRef(active)
-    
-    useEffect(() => {
-      prevActive.current = active
-    }, [active])
-    
-    // console.log(active)
-    console.log(prevActive.current)
-  
 
   return (
     <div className='destinationLanding'>
@@ -46,7 +36,7 @@ export default function Destination() {
             <div className="planetPicture">
               <img src={picture} alt="Planet" />
             </div>
-            <div className={active !== prevActive.current ? "planetContent active" : "planetContent"}>
+            <div className="planetContent">
                 <div className="destinations">
                   {projectsData.map((destination, index) => (
                     <div key={index} className={active === index ? "destinationsPlanetActive" : "destinationsPlanet"}>
