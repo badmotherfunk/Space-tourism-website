@@ -217,7 +217,8 @@
         background: url(../../../public/assets/technology/background-technology-mobile.jpg);
     }
     .technologyGlobalContainer {
-        margin: 0;
+        margin-top: 0;
+        height: auto;
     }
     .technologyWrapper {
         justify-content: flex-end;
@@ -246,12 +247,16 @@
     }
     .technologyInformationSubtitle {
         margin-bottom: 10px;
+        font-size: 17px;
     }
     .technologyInformationTitle {
-        font-size: 30px;
+        font-size: 28px;
     }
     .technologyInformationDescription {
         width: 100%;
         line-height: 30px;
+        margin-top: 10px;
+        font-size: 18px;
+        padding-bottom: 50px;
     }
 }

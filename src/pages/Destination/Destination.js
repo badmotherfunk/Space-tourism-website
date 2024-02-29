@@ -34,7 +34,7 @@ export default function Destination() {
         </div>
         <div className='planetContainer'>
             <div className="planetPicture">
-              <img src={picture} alt="Planet" />
+              <img src={picture} alt={data.name} />
             </div>
             <div className="planetContent">
                 <div className="destinations">
