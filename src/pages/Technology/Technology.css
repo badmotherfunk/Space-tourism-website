@@ -213,9 +213,6 @@
 }
 
 @media screen and (max-width: 480px) {
-    .technologyBackground {
-        background: url(../../../public/assets/technology/background-technology-mobile.jpg);
-    }
     .technologyGlobalContainer {
         margin-top: 0;
         height: auto;
